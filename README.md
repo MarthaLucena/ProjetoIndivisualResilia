@@ -1,6 +1,7 @@
-# ProjetoIndivisualResilia
-Projeto Individual - Resilia
-
+# Projeto Indivisual Resilia
+<h3>
+Aluna: Martha Lucena
+</h3>
 Projeto na linguagem Python, feito com o PyCharm.
 
 Download Python:
