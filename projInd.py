@@ -13,7 +13,7 @@ while True:
     candidato = (nome, entrevista, teorico, pratico, soft)
     resultados.append(candidato)
 
-# 3º: Nessa parte basicamente vai ser gerada uma variável que vai funcionar como uma estrutura condicional, ou seja, foi
+# 4º: Nessa parte basicamente vai ser gerada uma variável que vai funcionar como uma estrutura condicional, ou seja, foi
 #     criada a variável 'continuar' que vai receber uma informação, e, a partir da informação recebida (nesse caso 's' ou 'n'), vai
 #     gerar uma reação. No caso da variável criada, ela diz basicamente: caso a informação que o usuário digitar seja 'n', então pare
 #     o laço de repetição, else, ou seja, se não, então 'Digite s/n'.
@@ -23,12 +23,12 @@ while True:
     else:
         print('Digite s/n')
 
-# 3º: Criar uma segunda lista para armazenar os resultados 'formatados', ou seja, os resultados que vão ser filtrados
+# 5º: Criar uma segunda lista para armazenar os resultados 'formatados', ou seja, os resultados que vão ser filtrados
 #     de acordo com o que se pede na variável 'resultado_formatado' (repare que a lista e a variável têm quase o mesmo
 # nome, mas são diferentes.
 resultados_formatados = []
 
-# 3º: Aqui foi criada basicamente uma estrutura condicional que vai pegar a variável 'candidato' (lá de cima) e vai dizer:
+# 6º: Aqui foi criada basicamente uma estrutura condicional que vai pegar a variável 'candidato' (lá de cima) e vai dizer:
 #     'Para candidatos na lista armazenada 'resultados', então: aí cria uma variável abaixo onde você vai colocar
 #      a forma como vai ser o print na tela. Utiliza-se a variável candidato pois é nela que contém
 #     o conjunto das notas dos candidatos, e é por isso que aqui embaixo está f"{candidato[0]}e{candidato[1]}_t{candidato[2]}_p{candidato[3]}_s{candidato[4]}"
@@ -43,7 +43,7 @@ for candidato in resultados:
 
 resultados_formatados = []
 
-# 3º: Aqui foi criada basicamente uma estrutura condicional que vai pegar a variável 'candidato' (lá de cima) e vai dizer:
+# 7º: Aqui foi criada basicamente uma estrutura condicional que vai pegar a variável 'candidato' (lá de cima) e vai dizer:
 #     Para o candidato X que está na lista armazenada resultado:
 #     Se 1 for menor ou igual ao SEGUNDO vetor da variável candidato, ou seja 'entrevista' (descrito como [1]) eessa mesma variável for menor ou igual a 5, e assim
 #     para os outros filtros que deseja colocar. OU SEJA, simplificando: existem dois valores, nesse caso, igual ou maior que 1 e igual ou menor que 5, ou seja, entre 1 e 5,
@@ -55,7 +55,7 @@ for candidato in resultados:
         resultado_formatado = f"Candidato(a): {candidato[0]} e{candidato[1]}_t{candidato[2]}_p{candidato[3]}_s{candidato[4]}"
         resultados_formatados.append(resultado_formatado)
 
-# 3º: No fim, vai ser impressa a LISTA 'resultados_formatados', que vai puxar os resultados de acordo com o filtro que foi colocado, porém,
+# 8º: No fim, vai ser impressa a LISTA 'resultados_formatados', que vai puxar os resultados de acordo com o filtro que foi colocado, porém,
 #     já formatados da forma como é pedido para que apareça, sendo "Candidato: robson e3_t3_p3_s3", pois já foi formatada lá na primeira parte
 #     'for candidato in resultados:'
 print(resultados_formatados)
